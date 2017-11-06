@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="algorithms">
+      <UniqueIdentifier>{5d9e192d-1a06-4954-9ff6-0e9391f85e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encoders">
+      <UniqueIdentifier>{d9ff3bdf-f172-43b0-a3fd-3749a0c52bad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{e6a5b1dc-20e0-48ad-9c72-04df4288a901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{e597169e-eaf0-4e0c-89fc-a1d3a13ede60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ntypes">
+      <UniqueIdentifier>{d485897d-ecdc-40a4-97af-1723195182d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os">
+      <UniqueIdentifier>{f4fee44c-336c-4248-8158-ea395efd0b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proto">
+      <UniqueIdentifier>{97d876d6-f9fe-4cc2-a110-330477d0e669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="regions">
+      <UniqueIdentifier>{160124a4-e884-44cf-b716-7b7758aa134e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types">
+      <UniqueIdentifier>{71079f92-8f71-4c57-9155-b40ca4141069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{9ef6b4bb-7cd0-4681-a5dd-0fa6bcbaad15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\nupic\algorithms\Anomaly.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\BitHistory.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\Cell.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\Cells4.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\ClassifierResult.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\CondProbTable.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\Connections.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\GaborNode.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\ImageSensorLite.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\InSynapse.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\OutSynapse.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\SDRClassifier.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\Segment.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\SegmentUpdate.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\SpatialPooler.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\Svm.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\algorithms\TemporalMemory.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\encoders\ScalarEncoder.cpp">
+      <Filter>encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\encoders\ScalarSensor.cpp">
+      <Filter>encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\Collections.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\Input.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\Link.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\LinkPolicyFactory.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\Network.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\NuPIC.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\Output.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\Region.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\RegionImpl.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\RegionImplFactory.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\RegionIo.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\RegionParameters.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\Spec.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\TestFanIn2LinkPolicy.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\TestNode.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\UniformLinkPolicy.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\engine\YAMLUtils.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\math\SparseMatrixAlgorithms.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\math\SparseMatrixConnections.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\math\StlIo.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\math\Topology.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\utils\ArrayProtoUtils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\utils\LoggingException.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\utils\LogItem.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\utils\MovingAverage.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\utils\Random.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\utils\StringUtils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\utils\TRandom.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\utils\Watcher.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\types\BasicType.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\types\Fraction.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\regions\PyRegion.cpp">
+      <Filter>regions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\regions\VectorFile.cpp">
+      <Filter>regions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\regions\VectorFileEffector.cpp">
+      <Filter>regions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\regions\VectorFileSensor.cpp">
+      <Filter>regions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\os\Directory.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\os\DynamicLibrary.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\os\Env.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\os\FStream.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\os\OS.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\os\OSUnix.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\os\OSWin.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\os\Path.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\os\Regex.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\os\Timer.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\ntypes\ArrayBase.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\ntypes\Buffer.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\ntypes\BundleIO.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\ntypes\Collection.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\ntypes\Dimensions.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\ntypes\MemParser.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\ntypes\Scalar.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\ntypes\Value.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\nupic\algorithms\Anomaly.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\ArrayBuffer.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\BitHistory.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\Cell.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\Cells4.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\ClassifierResult.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\CondProbTable.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\Connections.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\GaborNode.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\ImageSensorLite.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\InSynapse.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\OutSynapse.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\Scanning.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\SDRClassifier.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\Segment.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\SegmentUpdate.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\SpatialPooler.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\Svm.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\SvmT.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\algorithms\TemporalMemory.hpp">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\encoders\ScalarEncoder.hpp">
+      <Filter>encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\encoders\ScalarSensor.hpp">
+      <Filter>encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\Input.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\Link.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\LinkPolicy.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\LinkPolicyFactory.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\Network.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\NuPIC.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\Output.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\Region.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\RegionImpl.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\RegionImplFactory.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\RegisteredRegionImpl.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\Spec.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\TestFanIn2LinkPolicy.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\TestNode.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\UniformLinkPolicy.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\engine\YAMLUtils.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Array2D.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\ArrayAlgo.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Convolution.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\DenseMatrix.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Domain.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Erosion.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Functions.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\GraphAlgorithms.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Index.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Math.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\NearestNeighbor.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Rotation.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\SegmentMatrixAdapter.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Set.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\SparseBinaryMatrix.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\SparseMatrix.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\SparseMatrix01.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\SparseMatrixAlgorithms.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\SparseMatrixConnections.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\SparseRLEMatrix.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\SparseTensor.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\StlIo.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Topology.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Types.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\math\Utils.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\utils\ArrayProtoUtils.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\utils\GroupBy.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\utils\Log.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\utils\LoggingException.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\utils\LogItem.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\utils\MovingAverage.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\utils\Random.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\utils\StringUtils.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\utils\TRandom.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\utils\Watcher.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\types\BasicType.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\types\Exception.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\types\Fraction.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\types\Serializable.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\types\Types.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\types\Types.hpp">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\regions\PyRegion.hpp">
+      <Filter>regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\regions\VectorFile.hpp">
+      <Filter>regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\regions\VectorFileEffector.hpp">
+      <Filter>regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\regions\VectorFileSensor.hpp">
+      <Filter>regions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\os\Directory.hpp">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\os\DynamicLibrary.hpp">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\os\Env.hpp">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\os\FStream.hpp">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\os\OS.hpp">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\os\Path.hpp">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\os\Regex.hpp">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\os\Timer.hpp">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\Array.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\ArrayBase.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\ArrayRef.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\Buffer.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\BundleIO.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\Collection.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\Dimensions.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\MemParser.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\MemStream.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\NodeSet.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\ObjectModel.h">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\ObjectModel.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\Scalar.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\ntypes\Value.hpp">
+      <Filter>ntypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\ArrayProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\BitHistory.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\Cell.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\Cells4.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\ClaClassifier.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\ConnectionsProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\LinkProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\Map.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\NetworkProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\PyRegionProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\RandomProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\RegionProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\SdrClassifier.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\Segment.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\SegmentUpdate.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\SparseBinaryMatrixProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\SparseMatrixProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\SpatialPoolerProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\SvmProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\TemporalMemoryProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\TemporalMemoryV1.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\TestNodeProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\proto\VectorFileSensorProto.capnp.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\nupic\proto\ArrayProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\BitHistory.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\Cell.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\Cells4.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\ClaClassifier.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\ConnectionsProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\LinkProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\Map.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\NetworkProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\PyRegionProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\RandomProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\RegionProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\SdrClassifier.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\Segment.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\SegmentUpdate.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\SparseBinaryMatrixProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\SparseMatrixProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\SpatialPoolerProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\SvmProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\TemporalMemoryProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\TemporalMemoryV1.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\TestNodeProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\..\src\nupic\proto\VectorFileSensorProto.capnp">
+      <Filter>proto</Filter>
+    </None>
+  </ItemGroup>
+</Project>

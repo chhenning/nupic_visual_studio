@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9FD258EA-0CCB-4357-B1A2-6E18A9A8D3B3}</ProjectGuid>
+    <RootNamespace>nupic</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\src;\..\..\src\common;..\..\tools\capnproto\capnproto-c++-0.6.1\src\;D:\vcpkg_2017\installed\x64-windows\include;;D:\vcpkg_2017\installed\x64-windows\include\python3.6</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDLL;NOMINMAX;NTA_INTERNAL;NTA_OS_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\nupic\algorithms\Anomaly.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\BitHistory.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\Cell.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\Cells4.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\ClassifierResult.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\CondProbTable.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\Connections.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\GaborNode.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\ImageSensorLite.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\InSynapse.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\OutSynapse.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\SDRClassifier.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\Segment.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\SegmentUpdate.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\SpatialPooler.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\Svm.cpp" />
+    <ClCompile Include="..\..\src\nupic\algorithms\TemporalMemory.cpp" />
+    <ClCompile Include="..\..\src\nupic\encoders\ScalarEncoder.cpp" />
+    <ClCompile Include="..\..\src\nupic\encoders\ScalarSensor.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\Collections.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\Input.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\Link.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\LinkPolicyFactory.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\Network.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\NuPIC.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\Output.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\Region.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\RegionImpl.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\RegionImplFactory.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\RegionIo.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\RegionParameters.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\Spec.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\TestFanIn2LinkPolicy.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\TestNode.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\UniformLinkPolicy.cpp" />
+    <ClCompile Include="..\..\src\nupic\engine\YAMLUtils.cpp" />
+    <ClCompile Include="..\..\src\nupic\math\SparseMatrixAlgorithms.cpp" />
+    <ClCompile Include="..\..\src\nupic\math\SparseMatrixConnections.cpp" />
+    <ClCompile Include="..\..\src\nupic\math\StlIo.cpp" />
+    <ClCompile Include="..\..\src\nupic\math\Topology.cpp" />
+    <ClCompile Include="..\..\src\nupic\ntypes\ArrayBase.cpp" />
+    <ClCompile Include="..\..\src\nupic\ntypes\Buffer.cpp" />
+    <ClCompile Include="..\..\src\nupic\ntypes\BundleIO.cpp" />
+    <ClCompile Include="..\..\src\nupic\ntypes\Collection.cpp" />
+    <ClCompile Include="..\..\src\nupic\ntypes\Dimensions.cpp" />
+    <ClCompile Include="..\..\src\nupic\ntypes\MemParser.cpp" />
+    <ClCompile Include="..\..\src\nupic\ntypes\Scalar.cpp" />
+    <ClCompile Include="..\..\src\nupic\ntypes\Value.cpp" />
+    <ClCompile Include="..\..\src\nupic\os\Directory.cpp" />
+    <ClCompile Include="..\..\src\nupic\os\DynamicLibrary.cpp" />
+    <ClCompile Include="..\..\src\nupic\os\Env.cpp" />
+    <ClCompile Include="..\..\src\nupic\os\FStream.cpp" />
+    <ClCompile Include="..\..\src\nupic\os\OS.cpp" />
+    <ClCompile Include="..\..\src\nupic\os\OSUnix.cpp" />
+    <ClCompile Include="..\..\src\nupic\os\OSWin.cpp" />
+    <ClCompile Include="..\..\src\nupic\os\Path.cpp" />
+    <ClCompile Include="..\..\src\nupic\os\Regex.cpp" />
+    <ClCompile Include="..\..\src\nupic\os\Timer.cpp" />
+    <ClCompile Include="..\..\src\nupic\regions\PyRegion.cpp" />
+    <ClCompile Include="..\..\src\nupic\regions\VectorFile.cpp" />
+    <ClCompile Include="..\..\src\nupic\regions\VectorFileEffector.cpp" />
+    <ClCompile Include="..\..\src\nupic\regions\VectorFileSensor.cpp" />
+    <ClCompile Include="..\..\src\nupic\types\BasicType.cpp" />
+    <ClCompile Include="..\..\src\nupic\types\Fraction.cpp" />
+    <ClCompile Include="..\..\src\nupic\utils\ArrayProtoUtils.cpp" />
+    <ClCompile Include="..\..\src\nupic\utils\LoggingException.cpp" />
+    <ClCompile Include="..\..\src\nupic\utils\LogItem.cpp" />
+    <ClCompile Include="..\..\src\nupic\utils\MovingAverage.cpp" />
+    <ClCompile Include="..\..\src\nupic\utils\Random.cpp" />
+    <ClCompile Include="..\..\src\nupic\utils\StringUtils.cpp" />
+    <ClCompile Include="..\..\src\nupic\utils\TRandom.cpp" />
+    <ClCompile Include="..\..\src\nupic\utils\Watcher.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\nupic\algorithms\Anomaly.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\ArrayBuffer.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\BitHistory.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\Cell.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\Cells4.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\ClassifierResult.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\CondProbTable.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\Connections.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\GaborNode.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\ImageSensorLite.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\InSynapse.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\OutSynapse.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\Scanning.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\SDRClassifier.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\Segment.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\SegmentUpdate.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\SpatialPooler.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\Svm.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\SvmT.hpp" />
+    <ClInclude Include="..\..\src\nupic\algorithms\TemporalMemory.hpp" />
+    <ClInclude Include="..\..\src\nupic\encoders\ScalarEncoder.hpp" />
+    <ClInclude Include="..\..\src\nupic\encoders\ScalarSensor.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\Input.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\Link.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\LinkPolicy.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\LinkPolicyFactory.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\Network.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\NuPIC.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\Output.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\Region.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\RegionImpl.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\RegionImplFactory.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\RegisteredRegionImpl.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\Spec.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\TestFanIn2LinkPolicy.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\TestNode.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\UniformLinkPolicy.hpp" />
+    <ClInclude Include="..\..\src\nupic\engine\YAMLUtils.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Array2D.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\ArrayAlgo.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Convolution.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\DenseMatrix.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Domain.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Erosion.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Functions.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\GraphAlgorithms.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Index.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Math.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\NearestNeighbor.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Rotation.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\SegmentMatrixAdapter.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Set.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\SparseBinaryMatrix.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\SparseMatrix.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\SparseMatrix01.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\SparseMatrixAlgorithms.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\SparseMatrixConnections.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\SparseRLEMatrix.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\SparseTensor.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\StlIo.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Topology.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Types.hpp" />
+    <ClInclude Include="..\..\src\nupic\math\Utils.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\Array.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\ArrayBase.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\ArrayRef.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\Buffer.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\BundleIO.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\Collection.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\Dimensions.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\MemParser.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\MemStream.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\NodeSet.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\ObjectModel.h" />
+    <ClInclude Include="..\..\src\nupic\ntypes\ObjectModel.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\Scalar.hpp" />
+    <ClInclude Include="..\..\src\nupic\ntypes\Value.hpp" />
+    <ClInclude Include="..\..\src\nupic\os\Directory.hpp" />
+    <ClInclude Include="..\..\src\nupic\os\DynamicLibrary.hpp" />
+    <ClInclude Include="..\..\src\nupic\os\Env.hpp" />
+    <ClInclude Include="..\..\src\nupic\os\FStream.hpp" />
+    <ClInclude Include="..\..\src\nupic\os\OS.hpp" />
+    <ClInclude Include="..\..\src\nupic\os\Path.hpp" />
+    <ClInclude Include="..\..\src\nupic\os\Regex.hpp" />
+    <ClInclude Include="..\..\src\nupic\os\Timer.hpp" />
+    <ClInclude Include="..\..\src\nupic\proto\ArrayProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\BitHistory.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\Cell.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\Cells4.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\ClaClassifier.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\ConnectionsProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\LinkProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\Map.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\NetworkProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\PyRegionProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\RandomProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\RegionProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\SdrClassifier.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\Segment.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\SegmentUpdate.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\SparseBinaryMatrixProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\SparseMatrixProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\SpatialPoolerProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\SvmProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\TemporalMemoryProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\TemporalMemoryV1.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\TestNodeProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\proto\VectorFileSensorProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\regions\PyRegion.hpp" />
+    <ClInclude Include="..\..\src\nupic\regions\VectorFile.hpp" />
+    <ClInclude Include="..\..\src\nupic\regions\VectorFileEffector.hpp" />
+    <ClInclude Include="..\..\src\nupic\regions\VectorFileSensor.hpp" />
+    <ClInclude Include="..\..\src\nupic\types\BasicType.hpp" />
+    <ClInclude Include="..\..\src\nupic\types\Exception.hpp" />
+    <ClInclude Include="..\..\src\nupic\types\Fraction.hpp" />
+    <ClInclude Include="..\..\src\nupic\types\Serializable.hpp" />
+    <ClInclude Include="..\..\src\nupic\types\Types.h" />
+    <ClInclude Include="..\..\src\nupic\types\Types.hpp" />
+    <ClInclude Include="..\..\src\nupic\utils\ArrayProtoUtils.hpp" />
+    <ClInclude Include="..\..\src\nupic\utils\GroupBy.hpp" />
+    <ClInclude Include="..\..\src\nupic\utils\Log.hpp" />
+    <ClInclude Include="..\..\src\nupic\utils\LoggingException.hpp" />
+    <ClInclude Include="..\..\src\nupic\utils\LogItem.hpp" />
+    <ClInclude Include="..\..\src\nupic\utils\MovingAverage.hpp" />
+    <ClInclude Include="..\..\src\nupic\utils\Random.hpp" />
+    <ClInclude Include="..\..\src\nupic\utils\StringUtils.hpp" />
+    <ClInclude Include="..\..\src\nupic\utils\TRandom.hpp" />
+    <ClInclude Include="..\..\src\nupic\utils\Watcher.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\nupic\proto\ArrayProto.capnp" />
+    <None Include="..\..\src\nupic\proto\BitHistory.capnp" />
+    <None Include="..\..\src\nupic\proto\Cell.capnp" />
+    <None Include="..\..\src\nupic\proto\Cells4.capnp" />
+    <None Include="..\..\src\nupic\proto\ClaClassifier.capnp" />
+    <None Include="..\..\src\nupic\proto\ConnectionsProto.capnp" />
+    <None Include="..\..\src\nupic\proto\LinkProto.capnp" />
+    <None Include="..\..\src\nupic\proto\Map.capnp" />
+    <None Include="..\..\src\nupic\proto\NetworkProto.capnp" />
+    <None Include="..\..\src\nupic\proto\PyRegionProto.capnp" />
+    <None Include="..\..\src\nupic\proto\RandomProto.capnp" />
+    <None Include="..\..\src\nupic\proto\RegionProto.capnp" />
+    <None Include="..\..\src\nupic\proto\SdrClassifier.capnp" />
+    <None Include="..\..\src\nupic\proto\Segment.capnp" />
+    <None Include="..\..\src\nupic\proto\SegmentUpdate.capnp" />
+    <None Include="..\..\src\nupic\proto\SparseBinaryMatrixProto.capnp" />
+    <None Include="..\..\src\nupic\proto\SparseMatrixProto.capnp" />
+    <None Include="..\..\src\nupic\proto\SpatialPoolerProto.capnp" />
+    <None Include="..\..\src\nupic\proto\SvmProto.capnp" />
+    <None Include="..\..\src\nupic\proto\TemporalMemoryProto.capnp" />
+    <None Include="..\..\src\nupic\proto\TemporalMemoryV1.capnp" />
+    <None Include="..\..\src\nupic\proto\TestNodeProto.capnp" />
+    <None Include="..\..\src\nupic\proto\VectorFileSensorProto.capnp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
