@@ -30,7 +30,7 @@
 #include <set>
 #include <sstream>
 
-#include "cycle_counter.hpp"
+#include <cycle_counter.hpp>
 #include <nupic/utils/Log.hpp>
 #include <assert.h>
 #include <cstring>

@@ -27,7 +27,7 @@ This dependency convert's .capnp files into c++ files. The tool and headers are 
 
 # Compiling nupic
 
-* set compiler symbols: NTA_OS_WINDOWS;NTA_INTERNAL
+* set compiler symbols: NTA_OS_WINDOWS;NTA_INTERNAL;NTA_COMPILER_MSVC;NOMINMAX;
 * include cycle_counter.hpp
 
 # Code changes:
@@ -35,7 +35,12 @@ This dependency convert's .capnp files into c++ files. The tool and headers are 
 * Change apr include from #include <apr-1/apr_general.h> TO #include <apr_general.h>
 * Add #include <algorithm> to topology.cpp
 * topology.cpp has some incorrect cpp, like assigning neg value to UInt. Marked all changed with CHH
-   offset_(neighborhood.dimensions_.size(), -1 * (Int)neighborhood.radius_),
+   offset_(neighborhood.dimensions_.size(), -((Int)neighborhood.radius_)),
+
+* missing headers:
+    - "apr_arch_utf8.h" For now I just took it from [here](https://github.com/vpp-dev/mtcp/tree/master/apps/apache_benchmark/srclib/apr/include/arch/win32)
+    - "apr_base64.h"
+
 
 
 

@@ -96,7 +96,7 @@ Neighborhood::Iterator::Iterator(const Neighborhood& neighborhood, bool end)
   : neighborhood_(neighborhood),
     //CHH
 	//offset_(neighborhood.dimensions_.size(), -neighborhood.radius_),
-	offset_(neighborhood.dimensions_.size(), -1 * (Int)neighborhood.radius_),
+	offset_(neighborhood.dimensions_.size(), -((Int)neighborhood.radius_)),
     finished_(end)
 {
   // Choose the first offset that has positive resulting coordinates.
@@ -197,7 +197,9 @@ WrappingNeighborhood::WrappingNeighborhood(
 WrappingNeighborhood::Iterator::Iterator(
   const WrappingNeighborhood& neighborhood, bool end)
   : neighborhood_(neighborhood),
-    offset_(neighborhood.dimensions_.size(), -neighborhood.radius_),
+	//CHH
+	//offset_(neighborhood.dimensions_.size(), -neighborhood.radius_),
+	offset_(neighborhood.dimensions_.size(), -((Int)neighborhood.radius_)),
     finished_(end)
 {
 }
@@ -259,7 +261,9 @@ void WrappingNeighborhood::Iterator::advance_()
 
     if (overflowed)
     {
-      offset_[i] = -neighborhood_.radius_;
+      // CHH
+      //offset_[i] = -neighborhood_.radius_;
+      offset_[i] = -(Int)neighborhood_.radius_;
     }
     else
     {
