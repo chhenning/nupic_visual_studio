@@ -832,200 +832,198 @@ void Network::load(const std::string& path)
 
 void Network::loadFromBundle(const std::string& name)
 {
-  if (! StringUtils::endsWith(name, ".nta"))
-    NTA_THROW << "loadFromBundle: bundle extension must be \".nta\"";
+  //if (! StringUtils::endsWith(name, ".nta"))
+  //  NTA_THROW << "loadFromBundle: bundle extension must be \".nta\"";
 
-  std::string fullPath = Path::normalize(Path::makeAbsolute(name));
+  //std::string fullPath = Path::normalize(Path::makeAbsolute(name));
 
-  if (! Path::exists(fullPath))
-    NTA_THROW << "Path " << fullPath << " does not exist";
+  //if (! Path::exists(fullPath))
+  //  NTA_THROW << "Path " << fullPath << " does not exist";
 
-  std::string networkStructureFilename = Path::join(fullPath, "network.yaml");
-  std::ifstream f(networkStructureFilename.c_str());
-  YAML::Parser parser(f);
-  YAML::Node doc;
-  bool success = parser.GetNextDocument(doc);
-  if (!success)
-    NTA_THROW << "Unable to find YAML document in network structure file "
-              << networkStructureFilename;
+  //std::string networkStructureFilename = Path::join(fullPath, "network.yaml");
+  //std::ifstream f(networkStructureFilename.c_str());
+  //YAML::Parser parser(f);
+  //YAML::Node doc;
+  //bool success = parser.GetNextDocument(doc);
+  //if (!success)
+  //  NTA_THROW << "Unable to find YAML document in network structure file "
+  //            << networkStructureFilename;
 
-  if (doc.Type() != YAML::NodeType::Map)
-    NTA_THROW << "Invalid network structure file -- does not contain a map";
+  //if (doc.Type() != YAML::NodeType::Map)
+  //  NTA_THROW << "Invalid network structure file -- does not contain a map";
 
-  // Should contain Version, Regions, Links
-  if (doc.size() != 3)
-    NTA_THROW << "Invalid network structure file -- contains "
-              << doc.size() << " elements";
+  //// Should contain Version, Regions, Links
+  //if (doc.size() != 3)
+  //  NTA_THROW << "Invalid network structure file -- contains "
+  //            << doc.size() << " elements";
 
-  // Extra version
-  const YAML::Node *node = doc.FindValue("Version");
-  if (node == nullptr)
-    NTA_THROW << "Invalid network structure file -- no version";
+  //// Extra version
+  //const YAML::Node *node = doc.FindValue("Version");
+  //if (node == nullptr)
+  //  NTA_THROW << "Invalid network structure file -- no version";
 
-  int version;
-  *node >> version;
-  if (version != 2)
-    NTA_THROW << "Invalid network structure file -- only version 2 supported";
+  //int version;
+  //*node >> version;
+  //if (version != 2)
+  //  NTA_THROW << "Invalid network structure file -- only version 2 supported";
 
-  // Regions
-  const YAML::Node *regions = doc.FindValue("Regions");
-  if (regions == nullptr)
-    NTA_THROW << "Invalid network structure file -- no regions";
+  //// Regions
+  //const YAML::Node *regions = doc.FindValue("Regions");
+  //if (regions == nullptr)
+  //  NTA_THROW << "Invalid network structure file -- no regions";
 
-  if (regions->Type() != YAML::NodeType::Sequence)
-    NTA_THROW << "Invalid network structure file -- regions element is not a list";
+  //if (regions->Type() != YAML::NodeType::Sequence)
+  //  NTA_THROW << "Invalid network structure file -- regions element is not a list";
 
-  for (YAML::Iterator region = regions->begin(); region != regions->end(); region++)
-  {
-    // Each region is a map -- extract the 5 values in the map
-    if ((*region).Type() != YAML::NodeType::Map)
-      NTA_THROW << "Invalid network structure file -- bad region (not a map)";
+  //for (YAML::Iterator region = regions->begin(); region != regions->end(); region++)
+  //{
+  //  // Each region is a map -- extract the 5 values in the map
+  //  if ((*region).Type() != YAML::NodeType::Map)
+  //    NTA_THROW << "Invalid network structure file -- bad region (not a map)";
 
-    if ((*region).size() != 5)
-      NTA_THROW << "Invalid network structure file -- bad region (wrong size)";
+  //  if ((*region).size() != 5)
+  //    NTA_THROW << "Invalid network structure file -- bad region (wrong size)";
 
-    // 1. name
-    node = (*region).FindValue("name");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- region has no name";
-    std::string name;
-    *node >> name;
+  //  // 1. name
+  //  node = (*region).FindValue("name");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- region has no name";
+  //  std::string name;
+  //  *node >> name;
 
-    // 2. nodeType
-    node = (*region).FindValue("nodeType");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- region "
-                << name << " has no node type";
-    std::string nodeType;
-    *node >> nodeType;
+  //  // 2. nodeType
+  //  node = (*region).FindValue("nodeType");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- region "
+  //              << name << " has no node type";
+  //  std::string nodeType;
+  //  *node >> nodeType;
 
-    // 3. dimensions
-    node = (*region).FindValue("dimensions");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- region "
-                << name << " has no dimensions";
-    if ((*node).Type() != YAML::NodeType::Sequence)
-      NTA_THROW << "Invalid network structure file -- region "
-                << name << " dimensions specified incorrectly";
-    Dimensions dimensions;
-    for (YAML::Iterator valiter = (*node).begin(); valiter != (*node).end(); valiter++)
-    {
-      size_t val;
-      (*valiter) >> val;
-      dimensions.push_back(val);
-    }
+  //  // 3. dimensions
+  //  node = (*region).FindValue("dimensions");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- region "
+  //              << name << " has no dimensions";
+  //  if ((*node).Type() != YAML::NodeType::Sequence)
+  //    NTA_THROW << "Invalid network structure file -- region "
+  //              << name << " dimensions specified incorrectly";
+  //  Dimensions dimensions;
+  //  for (YAML::Iterator valiter = (*node).begin(); valiter != (*node).end(); valiter++)
+  //  {
+  //    size_t val;
+  //    (*valiter) >> val;
+  //    dimensions.push_back(val);
+  //  }
 
-    // 4. phases
-    node = (*region).FindValue("phases");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- region"
-                << name << "has no phases";
-    if ((*node).Type() != YAML::NodeType::Sequence)
-      NTA_THROW << "Invalid network structure file -- region "
-                << name << " phases specified incorrectly";
+  //  // 4. phases
+  //  node = (*region).FindValue("phases");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- region"
+  //              << name << "has no phases";
+  //  if ((*node).Type() != YAML::NodeType::Sequence)
+  //    NTA_THROW << "Invalid network structure file -- region "
+  //              << name << " phases specified incorrectly";
 
-    std::set<UInt32> phases;
-    for (YAML::Iterator valiter = (*node).begin(); valiter != (*node).end(); valiter++)
-    {
-      UInt32 val;
-      (*valiter) >> val;
-      phases.insert(val);
-    }
+  //  std::set<UInt32> phases;
+  //  for (YAML::Iterator valiter = (*node).begin(); valiter != (*node).end(); valiter++)
+  //  {
+  //    UInt32 val;
+  //    (*valiter) >> val;
+  //    phases.insert(val);
+  //  }
 
-    // 5. label
-    node = (*region).FindValue("label");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- region"
-                << name << "has no label";
-    std::string label;
-    *node >> label;
+  //  // 5. label
+  //  node = (*region).FindValue("label");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- region"
+  //              << name << "has no label";
+  //  std::string label;
+  //  *node >> label;
 
-    Region *r = addRegionFromBundle(name, nodeType, dimensions, fullPath, label);
-    setPhases_(r, phases);
+  //  Region *r = addRegionFromBundle(name, nodeType, dimensions, fullPath, label);
+  //  setPhases_(r, phases);
+  //}
 
+  //const YAML::Node *links = doc.FindValue("Links");
+  //if (links == nullptr)
+  //  NTA_THROW << "Invalid network structure file -- no links";
 
-  }
+  //if (links->Type() != YAML::NodeType::Sequence)
+  //  NTA_THROW << "Invalid network structure file -- links element is not a list";
 
-  const YAML::Node *links = doc.FindValue("Links");
-  if (links == nullptr)
-    NTA_THROW << "Invalid network structure file -- no links";
+  //for (YAML::Iterator link = links->begin(); link != links->end(); link++)
+  //{
+  //  // Each link is a map -- extract the 5 values in the map
+  //  if ((*link).Type() != YAML::NodeType::Map)
+  //    NTA_THROW << "Invalid network structure file -- bad link (not a map)";
 
-  if (links->Type() != YAML::NodeType::Sequence)
-    NTA_THROW << "Invalid network structure file -- links element is not a list";
+  //  if ((*link).size() != 6)
+  //    NTA_THROW << "Invalid network structure file -- bad link (wrong size)";
 
-  for (YAML::Iterator link = links->begin(); link != links->end(); link++)
-  {
-    // Each link is a map -- extract the 5 values in the map
-    if ((*link).Type() != YAML::NodeType::Map)
-      NTA_THROW << "Invalid network structure file -- bad link (not a map)";
+  //  // 1. type
+  //  node = (*link).FindValue("type");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- link does not have a type";
+  //  std::string linkType;
+  //  *node >> linkType;
 
-    if ((*link).size() != 6)
-      NTA_THROW << "Invalid network structure file -- bad link (wrong size)";
+  //  // 2. params
+  //  node = (*link).FindValue("params");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- link does not have params";
+  //  std::string params;
+  //  *node >> params;
 
-    // 1. type
-    node = (*link).FindValue("type");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- link does not have a type";
-    std::string linkType;
-    *node >> linkType;
-
-    // 2. params
-    node = (*link).FindValue("params");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- link does not have params";
-    std::string params;
-    *node >> params;
-
-    // 3. srcRegion (name)
-    node = (*link).FindValue("srcRegion");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- link does not have a srcRegion";
-    std::string srcRegionName;
-    *node >> srcRegionName;
+  //  // 3. srcRegion (name)
+  //  node = (*link).FindValue("srcRegion");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- link does not have a srcRegion";
+  //  std::string srcRegionName;
+  //  *node >> srcRegionName;
 
 
-    // 4. srcOutput
-    node = (*link).FindValue("srcOutput");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- link does not have a srcOutput";
-    std::string srcOutputName;
-    *node >> srcOutputName;
+  //  // 4. srcOutput
+  //  node = (*link).FindValue("srcOutput");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- link does not have a srcOutput";
+  //  std::string srcOutputName;
+  //  *node >> srcOutputName;
 
-    // 5. destRegion
-    node = (*link).FindValue("destRegion");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- link does not have a destRegion";
-    std::string destRegionName;
-    *node >> destRegionName;
+  //  // 5. destRegion
+  //  node = (*link).FindValue("destRegion");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- link does not have a destRegion";
+  //  std::string destRegionName;
+  //  *node >> destRegionName;
 
-    // 6. destInput
-    node = (*link).FindValue("destInput");
-    if (node == nullptr)
-      NTA_THROW << "Invalid network structure file -- link does not have a destInput";
-    std::string destInputName;
-    *node >> destInputName;
+  //  // 6. destInput
+  //  node = (*link).FindValue("destInput");
+  //  if (node == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- link does not have a destInput";
+  //  std::string destInputName;
+  //  *node >> destInputName;
 
-    if (!regions_.contains(srcRegionName))
-      NTA_THROW << "Invalid network structure file -- link specifies source region '" << srcRegionName << "' but no such region exists";
-    Region* srcRegion = regions_.getByName(srcRegionName);
+  //  if (!regions_.contains(srcRegionName))
+  //    NTA_THROW << "Invalid network structure file -- link specifies source region '" << srcRegionName << "' but no such region exists";
+  //  Region* srcRegion = regions_.getByName(srcRegionName);
 
-    if (!regions_.contains(destRegionName))
-      NTA_THROW << "Invalid network structure file -- link specifies destination region '" << destRegionName << "' but no such region exists";
-    Region* destRegion = regions_.getByName(destRegionName);
+  //  if (!regions_.contains(destRegionName))
+  //    NTA_THROW << "Invalid network structure file -- link specifies destination region '" << destRegionName << "' but no such region exists";
+  //  Region* destRegion = regions_.getByName(destRegionName);
 
-    Output* srcOutput = srcRegion->getOutput(srcOutputName);
-    if (srcOutput == nullptr)
-      NTA_THROW << "Invalid network structure file -- link specifies source output '" << srcOutputName << "' but no such name exists";
+  //  Output* srcOutput = srcRegion->getOutput(srcOutputName);
+  //  if (srcOutput == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- link specifies source output '" << srcOutputName << "' but no such name exists";
 
-    Input* destInput = destRegion->getInput(destInputName);
-    if (destInput == nullptr)
-      NTA_THROW << "Invalid network structure file -- link specifies destination input '" << destInputName << "' but no such name exists";
+  //  Input* destInput = destRegion->getInput(destInputName);
+  //  if (destInput == nullptr)
+  //    NTA_THROW << "Invalid network structure file -- link specifies destination input '" << destInputName << "' but no such name exists";
 
-    // Create the link itself
-    auto newLink = new Link(linkType, params, srcOutput, destInput,
-                            0/*propagationDelay*/);
-    destInput->addLink(newLink, srcOutput);
-  } // links
+  //  // Create the link itself
+  //  auto newLink = new Link(linkType, params, srcOutput, destInput,
+  //                          0/*propagationDelay*/);
+  //  destInput->addLink(newLink, srcOutput);
+  //} // links
 
 }
 

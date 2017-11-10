@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\test\unit\UnitTestMain.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\DenseTensorUnitTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\algorithms\AnomalyTest.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="math">
+      <UniqueIdentifier>{bc6c8702-8e6c-492b-aed1-a94b5ac2f9f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithms">
+      <UniqueIdentifier>{f7eed1aa-12fe-4bcf-8787-2ae04d53502c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\test\unit\math\DenseTensorUnitTest.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

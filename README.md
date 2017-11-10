@@ -17,7 +17,9 @@ Some of the dependencies are not available in vcpkg and will be to be dealt with
 
 * apr via vcpkg
 * boost via vcpkg
+* gtest via vcpkg
 * python3 via vcpkg (I think I might need python 2.7.x)
+* numpy 
 * yaml-cpp via vcpkg
 * zlib via vcpkg
 
@@ -27,8 +29,14 @@ This dependency convert's .capnp files into c++ files. The tool and headers are 
 
 # Compiling nupic
 
-* set compiler symbols: NTA_OS_WINDOWS;NTA_INTERNAL;NTA_COMPILER_MSVC;NOMINMAX;
+* as static lib
+* set compiler symbols: _CRT_SECURE_NO_WARNINGS;NOMINMAX;NTA_COMPILER_MSVC;NTA_INTERNAL;NTA_OS_WINDOWS;
 * include cycle_counter.hpp
+
+## Include Paths
+
+* ..\..\src;..\..\src\common;..\..\tools\capnproto\capnproto-c++-0.6.1\src\;D:\vcpkg_2017\installed\x64-windows\include;D:\vcpkg_2017\installed\x64-windows\include\python3.6;C:\Users\chhenning\AppData\Local\Programs\Python\Python35\Lib\site-packages\numpy\core\include
+
 
 # Code changes:
 
@@ -40,7 +48,30 @@ This dependency convert's .capnp files into c++ files. The tool and headers are 
 * missing headers:
     - "apr_arch_utf8.h" For now I just took it from [here](https://github.com/vpp-dev/mtcp/tree/master/apps/apache_benchmark/srclib/apr/include/arch/win32)
     - "apr_base64.h"
+    
+* PyString_AsStringAndSize is not known when compiling with python 3
+
+* Added specialization for bool nearlyZero(const UInt& a) in Math.hpp
+
+* Network::loadFromBundle commented out.
+* YAMLUtils::_toScalar commented out.
+* YAMLUtils::_toArray commented out.
+* YAMLUtils::toValue commented out.
+* YAMLUtils::toValueMap commented out.
 
 
+# Unit Tests
 
+## Compiling
+
+* Compiler Symbols: NTA_OS_WINDOWS
+* Include Path: ..\..\src;D:\vcpkg_2017\installed\x64-windows\include;
+
+## Linking
+
+* Path: D:\vcpkg_2017\installed\x64-windows\lib
+* Modules: libapr-1.lib;gtest.lib
+
+## Running
+* adjust PATH env variable: PATH=D:\vcpkg_2017\installed\x64-windows\bin;%PATH%
 

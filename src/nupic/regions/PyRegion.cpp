@@ -488,7 +488,9 @@ void PyRegion::write(capnp::AnyPointer::Builder& proto) const
       Py_ssize_t srcNumBytes = 0;
       // NOTE: srcBytes will be set to point to the internal buffer inside
       // pyRegionProtoBytes
-      PyString_AsStringAndSize(pyRegionProtoBytes, &srcBytes, &srcNumBytes);
+      
+      //CHH
+      //PyString_AsStringAndSize(pyRegionProtoBytes, &srcBytes, &srcNumBytes);
 
       // Ensure alignment on capnp::word boundary;
       const int srcNumWords = srcNumBytes / sizeof(capnp::word);

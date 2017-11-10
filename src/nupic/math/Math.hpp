@@ -270,7 +270,13 @@ namespace nupic {
   template <typename T>
   inline bool nearlyZero(const T& a, const T& epsilon =T(nupic::Epsilon))
   {
-    return a >= -epsilon && a <= epsilon;
+      return a >= -epsilon && a <= epsilon;
+  }
+
+  //CHH
+  inline bool nearlyZero(const UInt& a)
+  {
+      return a == 0;
   }
 
   //--------------------------------------------------------------------------------
