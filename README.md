@@ -16,6 +16,7 @@ There are a few dependencies nupic is relying on, like zlib, etc. I'll be using 
 Some of the dependencies are not available in vcpkg and will be to be dealt with differenctly.
 
 * apr via vcpkg
+* apr-util via vcpkg
 * boost via vcpkg
 * gtest via vcpkg
 * python3 via vcpkg (I think I might need python 2.7.x)
@@ -26,6 +27,19 @@ Some of the dependencies are not available in vcpkg and will be to be dealt with
 ## Cap'n Proto
 
 This dependency convert's .capnp files into c++ files. The tool and headers are found in tools\capnproto .
+
+### Compiling Cap't Proto
+
+Unit tests need to link to this lib.
+
+Follow the steps outlined [here] (https://capnproto.org/install.html#installation-windows).
+In VS2017 command line run:
+    1) cmake -G "Visual Studio 15 2017"
+    2) Create x64 configuration
+    3) for "capnp" and "kj" projects remove "/machine:X86" in Additional Options in the Librarian Settings
+    4) Build "capnp" and "kj" projects
+
+
 
 # Compiling nupic
 
@@ -44,13 +58,13 @@ This dependency convert's .capnp files into c++ files. The tool and headers are 
 * Add #include <algorithm> to topology.cpp
 * topology.cpp has some incorrect cpp, like assigning neg value to UInt. Marked all changed with CHH
    offset_(neighborhood.dimensions_.size(), -((Int)neighborhood.radius_)),
+  
+* Redefining some of the old python 2.x functions:
 
-* missing headers:
-    - "apr_arch_utf8.h" For now I just took it from [here](https://github.com/vpp-dev/mtcp/tree/master/apps/apache_benchmark/srclib/apr/include/arch/win32)
-    - "apr_base64.h"
+* vcpkg's port of apr is missing "apr_arch_utf8.h". Copying from 
+    D:\vcpkg_2017\buildtrees\apr\src\apr-1.6.3\include\arch\win32 -> D:\vcpkg_2017\installed\x64-windows\include
     
-* PyString_AsStringAndSize is not known when compiling with python 3
-
+    
 * Added specialization for bool nearlyZero(const UInt& a) in Math.hpp
 
 * Network::loadFromBundle commented out.
@@ -66,12 +80,19 @@ This dependency convert's .capnp files into c++ files. The tool and headers are 
 
 * Compiler Symbols: NTA_OS_WINDOWS
 * Include Path: ..\..\src;D:\vcpkg_2017\installed\x64-windows\include;
+* compile "RandomPrivateOrig.c" as c++ file (/TP)
+* maybe use boost::python::extract<std::string>(...) ???
+
 
 ## Linking
 
 * Path: D:\vcpkg_2017\installed\x64-windows\lib
-* Modules: libapr-1.lib;gtest.lib
+* Modules: Psapi.lib;python36_d.lib;libaprutil-1.lib;libaprapp-1.lib;libapr-1.lib;yaml-cpp.lib;zlibd.lib;kj.lib;capnp.lib;libapr-1.lib;gtest.lib;
 
 ## Running
 * adjust PATH env variable: PATH=D:\vcpkg_2017\installed\x64-windows\bin;%PATH%
+
+* Make sure env variables are set
+    - PYTHONPATH="C:\Users\chhenning\AppData\Local\Programs\Python\Python35\DLLs;C:\Users\chhenning\AppData\Local\Programs\Python\Python35\Lib;C:\Users\chhenning\AppData\Local\Programs\Python\Python35\Lib\site-packages"
+    - PYTHONHOME="C:\Users\chhenning\AppData\Local\Programs\Python\Python35"
 

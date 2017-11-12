@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\CMakeFiles\4f918ca977141796364ec3b5ad9b775f\check.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\CMakeFiles\check" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E7D00B6B-15AA-380B-97B6-5D1A980F4623}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

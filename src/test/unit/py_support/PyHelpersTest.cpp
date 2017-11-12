@@ -26,9 +26,41 @@
 
 #include <nupic/py_support/PyHelpers.hpp>
 #include <limits>
+#include <boost/python.hpp>
+
 #include <gtest/gtest.h>
 
 using namespace nupic;
+
+#if PY_MAJOR_VERSION >= 3
+
+// String
+#define PyString_AsString PyUnicode_AS_DATA 
+#define PyString_FromString PyUnicode_FromString 
+#define PyString_Check PyUnicode_Check 
+#define PyString_FromStringAndSize PyUnicode_FromStringAndSize
+#define PyString_AsString PyUnicode_AsUnicode
+
+// Integer
+#define PyInt_Check PyLong_Check
+#define PyInt_FromLong PyLong_FromLong
+#define PyInt_AsLong PyLong_AsLong
+#endif
+
+#if PY_MAJOR_VERSION >= 3
+std::string py_unicode_to_string(py::String&  unicode_str)
+{
+    PyObject* pyStr = PyUnicode_AsEncodedString(unicode_str, "utf-8", "Error ~");
+
+    const char *strExcType = PyBytes_AS_STRING(pyStr);
+    std::string str(strExcType);
+
+    Py_XDECREF(pyStr);
+
+    return str;
+}
+#endif
+
 
 class PyHelpersTest : public ::testing::Test
 { 
@@ -94,9 +126,17 @@ TEST_F(PyHelpersTest, pyString)
   py::String ps3("123");
   ASSERT_TRUE(PyString_Check(ps3) != 0);
 
+#if PY_MAJOR_VERSION >= 3
+  std::string s1 = py_unicode_to_string(ps1);
+  std::string s2 = py_unicode_to_string(ps2);
+  std::string s3 = py_unicode_to_string(ps3);
+#else
   std::string s1(PyString_AsString(ps1));
   std::string s2(PyString_AsString(ps2));
   std::string s3(PyString_AsString(ps3));
+#endif
+
+
   std::string expected("123");
   ASSERT_TRUE(s1 == expected);
   ASSERT_TRUE(s2 == expected);

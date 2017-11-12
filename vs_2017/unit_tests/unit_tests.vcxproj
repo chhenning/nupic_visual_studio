@@ -99,12 +99,14 @@
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\src;D:\vcpkg_2017\installed\x64-windows\include;</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_MBCS;NTA_OS_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;..\..\tools\capnproto\capnproto-c++-0.6.1\src\;D:\vcpkg_2017\installed\x64-windows\include;D:\vcpkg_2017\installed\x64-windows\include\python3.6</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;NTA_OS_WINDOWS;NTA_INTERNAL;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>
+      </LanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>D:\vcpkg_2017\installed\x64-windows\debug\lib;D:\vcpkg_2017\installed\x64-windows\debug\lib\manual-link</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libapr-1.lib;gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\vcpkg_2017\installed\x64-windows\debug\lib;D:\vcpkg_2017\installed\x64-windows\debug\lib\manual-link;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Psapi.lib;python36_d.lib;libaprutil-1.lib;libaprapp-1.lib;libapr-1.lib;yaml-cpp.lib;zlibd.lib;kj.lib;capnp.lib;libapr-1.lib;gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -122,8 +124,62 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\test\unit\algorithms\AnomalyTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\algorithms\Cells4Test.cpp" />
+    <ClCompile Include="..\..\src\test\unit\algorithms\CondProbTableTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\algorithms\ConnectionsTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\algorithms\NearestNeighborUnitTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\algorithms\SDRClassifierTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\algorithms\SegmentTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\algorithms\SpatialPoolerTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\algorithms\SvmTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\algorithms\TemporalMemoryTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\encoders\ScalarEncoderTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\engine\InputTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\engine\LinkTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\engine\NetworkTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\engine\UniformLinkPolicyTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\engine\YAMLUtilsTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\src\test\unit\math\DenseTensorUnitTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\DomainUnitTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\IndexUnitTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\MathsTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\SegmentMatrixAdapterTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\SparseBinaryMatrixTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\SparseMatrix01UnitTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\SparseMatrixTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\SparseMatrixUnitTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\SparseTensorUnitTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\math\TopologyTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\ntypes\ArrayTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\ntypes\BufferTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\ntypes\CollectionTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\ntypes\DimensionsTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\ntypes\MemParserTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\ntypes\MemStreamTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\ntypes\NodeSetTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\ntypes\ScalarTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\ntypes\ValueTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\os\DirectoryTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\os\EnvTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\os\OSTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\os\PathTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\os\RegexTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\os\TimerTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\py_support\PyHelpersTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\types\BasicTypeTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\types\ExceptionTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\types\FractionTest.cpp" />
     <ClCompile Include="..\..\src\test\unit\UnitTestMain.cpp" />
+    <ClCompile Include="..\..\src\test\unit\utils\GroupByTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\utils\MovingAverageTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\utils\RandomPrivateOrig.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCpp</CompileAs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\utils\RandomTest.cpp" />
+    <ClCompile Include="..\..\src\test\unit\utils\WatcherTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\nupic\nupic.vcxproj">
@@ -132,6 +188,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\test\unit\math\DenseTensorUnitTest.hpp" />
+    <ClInclude Include="..\..\src\test\unit\math\DomainUnitTest.hpp" />
+    <ClInclude Include="..\..\src\test\unit\math\IndexUnitTest.hpp" />
+    <ClInclude Include="..\..\src\test\unit\math\MathsTest.hpp" />
+    <ClInclude Include="..\..\src\test\unit\math\SparseMatrix01UnitTest.hpp" />
+    <ClInclude Include="..\..\src\test\unit\math\SparseMatrixUnitTest.hpp" />
+    <ClInclude Include="..\..\src\test\unit\math\SparseTensorUnitTest.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

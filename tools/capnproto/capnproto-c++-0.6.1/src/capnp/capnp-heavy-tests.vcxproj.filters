@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\endian-reverse-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\capability-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\membrane-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\schema-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\schema-loader-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\schema-parser-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\dynamic-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\stringify-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\serialize-async-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\serialize-text-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\rpc-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\rpc-twoparty-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\ez-rpc-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\compiler\lexer-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\compiler\md5-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-util.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\compat\json-test.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\CMakeFiles\0c9aa8da1f7ecb4c517adc612a9a7129\test.capnp.c++.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\CMakeFiles\0c9aa8da1f7ecb4c517adc612a9a7129\test-import.capnp.c++.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\CMakeFiles\0c9aa8da1f7ecb4c517adc612a9a7129\test-import2.capnp.c++.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B073210D-AFA5-34E8-B3EA-A63559D4EE04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8EC0F20A-2105-3E8C-983F-96B6B0BFE8F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E7D00B6B-15AA-380B-97B6-5D1A980F4623}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -8,6 +8,153 @@
     <ClCompile Include="..\..\src\test\unit\algorithms\AnomalyTest.cpp">
       <Filter>algorithms</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\algorithms\Cells4Test.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\algorithms\CondProbTableTest.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\algorithms\ConnectionsTest.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\algorithms\NearestNeighborUnitTest.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\algorithms\SDRClassifierTest.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\algorithms\SegmentTest.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\algorithms\SpatialPoolerTest.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\algorithms\SvmTest.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\algorithms\TemporalMemoryTest.cpp">
+      <Filter>algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\encoders\ScalarEncoderTest.cpp">
+      <Filter>encoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\engine\InputTest.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\engine\LinkTest.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\engine\NetworkTest.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\engine\UniformLinkPolicyTest.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\engine\YAMLUtilsTest.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\math\DomainUnitTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\math\IndexUnitTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\math\MathsTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\math\SegmentMatrixAdapterTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\math\SparseBinaryMatrixTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\math\SparseMatrix01UnitTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\math\SparseMatrixTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\math\SparseMatrixUnitTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\math\SparseTensorUnitTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\math\TopologyTest.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\ntypes\ArrayTest.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\ntypes\BufferTest.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\ntypes\CollectionTest.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\ntypes\DimensionsTest.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\ntypes\MemParserTest.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\ntypes\MemStreamTest.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\ntypes\NodeSetTest.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\ntypes\ScalarTest.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\ntypes\ValueTest.cpp">
+      <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\os\DirectoryTest.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\os\EnvTest.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\os\OSTest.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\os\PathTest.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\os\RegexTest.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\os\TimerTest.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\py_support\PyHelpersTest.cpp">
+      <Filter>py_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\types\BasicTypeTest.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\types\ExceptionTest.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\types\FractionTest.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\utils\GroupByTest.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\utils\MovingAverageTest.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\utils\RandomPrivateOrig.c">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\utils\RandomTest.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\test\unit\utils\WatcherTest.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="math">
@@ -16,9 +163,48 @@
     <Filter Include="algorithms">
       <UniqueIdentifier>{f7eed1aa-12fe-4bcf-8787-2ae04d53502c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="encoders">
+      <UniqueIdentifier>{c4e0909d-4d18-4ee9-bcf0-a9104b01bd79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{370d91c0-f8c7-4eff-a63e-d72f1196f0ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ntypes">
+      <UniqueIdentifier>{31071498-4519-403f-8e2b-ea126e391f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os">
+      <UniqueIdentifier>{b8c8a7d7-7bbc-43f3-b273-302c8a855cac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="py_support">
+      <UniqueIdentifier>{678506fc-020f-4789-bf38-15fa8ce2e1f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types">
+      <UniqueIdentifier>{17b86200-200b-452c-b43d-4ba1c0a21857}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{2064165d-647e-457c-9ca2-8b8d44310a42}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\test\unit\math\DenseTensorUnitTest.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\test\unit\math\DomainUnitTest.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\test\unit\math\IndexUnitTest.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\test\unit\math\MathsTest.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\test\unit\math\SparseMatrix01UnitTest.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\test\unit\math\SparseMatrixUnitTest.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\test\unit\math\SparseTensorUnitTest.hpp">
       <Filter>math</Filter>
     </ClInclude>
   </ItemGroup>

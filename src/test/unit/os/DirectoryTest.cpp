@@ -29,7 +29,7 @@
 #include <nupic/os/Path.hpp>
 #include <nupic/os/OS.hpp>
 #include <nupic/os/FStream.hpp>
-#include <apr-1/apr.h>
+#include <apr.h>
 #include <gtest/gtest.h>
 #include <nupic/utils/Log.hpp>
 

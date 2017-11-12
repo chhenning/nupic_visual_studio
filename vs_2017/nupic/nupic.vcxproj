@@ -173,6 +173,11 @@
     <ClCompile Include="..\..\src\nupic\os\Path.cpp" />
     <ClCompile Include="..\..\src\nupic\os\Regex.cpp" />
     <ClCompile Include="..\..\src\nupic\os\Timer.cpp" />
+    <ClCompile Include="..\..\src\nupic\py_support\NumpyArrayObject.cpp" />
+    <ClCompile Include="..\..\src\nupic\py_support\NumpyVector.cpp" />
+    <ClCompile Include="..\..\src\nupic\py_support\PyArray.cpp" />
+    <ClCompile Include="..\..\src\nupic\py_support\PyHelpers.cpp" />
+    <ClCompile Include="..\..\src\nupic\py_support\PythonStream.cpp" />
     <ClCompile Include="..\..\src\nupic\regions\PyRegion.cpp" />
     <ClCompile Include="..\..\src\nupic\regions\VectorFile.cpp" />
     <ClCompile Include="..\..\src\nupic\regions\VectorFileEffector.cpp" />
@@ -297,6 +302,13 @@
     <ClInclude Include="..\..\src\nupic\proto\TemporalMemoryV1.capnp.h" />
     <ClInclude Include="..\..\src\nupic\proto\TestNodeProto.capnp.h" />
     <ClInclude Include="..\..\src\nupic\proto\VectorFileSensorProto.capnp.h" />
+    <ClInclude Include="..\..\src\nupic\py_support\NumpyArrayObject.hpp" />
+    <ClInclude Include="..\..\src\nupic\py_support\NumpyVector.hpp" />
+    <ClInclude Include="..\..\src\nupic\py_support\PyArray.hpp" />
+    <ClInclude Include="..\..\src\nupic\py_support\PyCapnp.hpp" />
+    <ClInclude Include="..\..\src\nupic\py_support\PyHelpers.hpp" />
+    <ClInclude Include="..\..\src\nupic\py_support\PythonStream.hpp" />
+    <ClInclude Include="..\..\src\nupic\py_support\WrappedVector.hpp" />
     <ClInclude Include="..\..\src\nupic\regions\PyRegion.hpp" />
     <ClInclude Include="..\..\src\nupic\regions\VectorFile.hpp" />
     <ClInclude Include="..\..\src\nupic\regions\VectorFileEffector.hpp" />

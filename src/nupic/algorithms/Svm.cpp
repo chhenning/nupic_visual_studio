@@ -362,7 +362,9 @@ svm_model::~svm_model() {
     for (size_t i = 0; i != sv.size(); ++i)
 
 #if defined(NTA_OS_WINDOWS) && defined(NTA_COMPILER_MSVC)
-      _aligned_free(sv[i]);
+    // CHH
+    delete[] sv[i];
+    //_aligned_free(sv[i]);
 #else
       delete[] sv[i];
 #endif

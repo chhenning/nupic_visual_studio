@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\array.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\common.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\debug.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\exception.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\io.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\memory.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\mutex.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\string.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\thread.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\main.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\arena.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\test-helpers.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\units.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\refcount.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\string-tree.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\parse\char.c++">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B073210D-AFA5-34E8-B3EA-A63559D4EE04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

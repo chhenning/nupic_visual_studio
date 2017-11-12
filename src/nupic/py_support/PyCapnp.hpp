@@ -41,7 +41,9 @@
 
 #include <nupic/types/Serializable.hpp>
 
-
+#if PY_MAJOR_VERSION >= 3
+#define PyString_FromStringAndSize PyUnicode_FromStringAndSize
+#endif
 
 namespace nupic
 {

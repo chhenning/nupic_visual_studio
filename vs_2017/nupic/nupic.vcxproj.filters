@@ -31,6 +31,9 @@
     <Filter Include="utils">
       <UniqueIdentifier>{9ef6b4bb-7cd0-4681-a5dd-0fa6bcbaad15}</UniqueIdentifier>
     </Filter>
+    <Filter Include="py_support">
+      <UniqueIdentifier>{5a30062f-3bed-4e20-915e-0c957192779d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\nupic\algorithms\Anomaly.cpp">
@@ -248,6 +251,21 @@
     </ClCompile>
     <ClCompile Include="..\..\src\nupic\ntypes\Value.cpp">
       <Filter>ntypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\py_support\NumpyArrayObject.cpp">
+      <Filter>py_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\py_support\NumpyVector.cpp">
+      <Filter>py_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\py_support\PyArray.cpp">
+      <Filter>py_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\py_support\PyHelpers.cpp">
+      <Filter>py_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nupic\py_support\PythonStream.cpp">
+      <Filter>py_support</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -634,6 +652,27 @@
     </ClInclude>
     <ClInclude Include="..\..\src\nupic\proto\VectorFileSensorProto.capnp.h">
       <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\py_support\NumpyArrayObject.hpp">
+      <Filter>py_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\py_support\NumpyVector.hpp">
+      <Filter>py_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\py_support\PyArray.hpp">
+      <Filter>py_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\py_support\PyCapnp.hpp">
+      <Filter>py_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\py_support\PyHelpers.hpp">
+      <Filter>py_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\py_support\PythonStream.hpp">
+      <Filter>py_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\nupic\py_support\WrappedVector.hpp">
+      <Filter>py_support</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

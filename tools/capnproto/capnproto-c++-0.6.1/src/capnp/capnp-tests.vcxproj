@@ -1,0 +1,1001 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3738E2EE-E761-3480-B21F-A929AED2A1D3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>capnp-tests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">capnp-tests.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">capnp-tests</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">capnp-tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">capnp-tests.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">capnp-tests</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">capnp-tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">capnp-tests.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">capnp-tests</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">capnp-tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">capnp-tests.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">capnp-tests</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">capnp-tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /wo4503</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\capnp-json.lib;Debug\capnp-rpc.lib;Debug\capnp.lib;Debug\capnpc.lib;..\kj\Debug\kj-async.lib;..\kj\Debug\kj-test.lib;..\kj\Debug\kj.lib;ws2_32.lib;Debug\capnp.lib;..\kj\Debug\kj.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Debug/capnp-tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Debug/capnp-tests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /wo4503</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\capnp-json.lib;Debug\capnp-rpc.lib;Debug\capnp.lib;Debug\capnpc.lib;..\kj\Debug\kj-async.lib;..\kj\Debug\kj-test.lib;..\kj\Debug\kj.lib;ws2_32.lib;Debug\capnp.lib;..\kj\Debug\kj.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Debug/capnp-tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Debug/capnp-tests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /wo4503</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\capnp-json.lib;Release\capnp-rpc.lib;Release\capnp.lib;Release\capnpc.lib;..\kj\Release\kj-async.lib;..\kj\Release\kj-test.lib;..\kj\Release\kj.lib;ws2_32.lib;Release\capnp.lib;..\kj\Release\kj.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Release/capnp-tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Release/capnp-tests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /wo4503</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\capnp-json.lib;Release\capnp-rpc.lib;Release\capnp.lib;Release\capnpc.lib;..\kj\Release\kj-async.lib;..\kj\Release\kj-test.lib;..\kj\Release\kj.lib;ws2_32.lib;Release\capnp.lib;..\kj\Release\kj.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Release/capnp-tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Release/capnp-tests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /wo4503</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\capnp-json.lib;MinSizeRel\capnp-rpc.lib;MinSizeRel\capnp.lib;MinSizeRel\capnpc.lib;..\kj\MinSizeRel\kj-async.lib;..\kj\MinSizeRel\kj-test.lib;..\kj\MinSizeRel\kj.lib;ws2_32.lib;MinSizeRel\capnp.lib;..\kj\MinSizeRel\kj.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/MinSizeRel/capnp-tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/MinSizeRel/capnp-tests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /wo4503</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\capnp-json.lib;MinSizeRel\capnp-rpc.lib;MinSizeRel\capnp.lib;MinSizeRel\capnpc.lib;..\kj\MinSizeRel\kj-async.lib;..\kj\MinSizeRel\kj-test.lib;..\kj\MinSizeRel\kj.lib;ws2_32.lib;MinSizeRel\capnp.lib;..\kj\MinSizeRel\kj.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/MinSizeRel/capnp-tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/MinSizeRel/capnp-tests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /wo4503</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\capnp-json.lib;RelWithDebInfo\capnp-rpc.lib;RelWithDebInfo\capnp.lib;RelWithDebInfo\capnpc.lib;..\kj\RelWithDebInfo\kj-async.lib;..\kj\RelWithDebInfo\kj-test.lib;..\kj\RelWithDebInfo\kj.lib;ws2_32.lib;RelWithDebInfo\capnp.lib;..\kj\RelWithDebInfo\kj.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/RelWithDebInfo/capnp-tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/RelWithDebInfo/capnp-tests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /wo4503</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\..;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\capnp-json.lib;RelWithDebInfo\capnp-rpc.lib;RelWithDebInfo\capnp.lib;RelWithDebInfo\capnpc.lib;..\kj\RelWithDebInfo\kj-async.lib;..\kj\RelWithDebInfo\kj-test.lib;..\kj\RelWithDebInfo\kj.lib;ws2_32.lib;RelWithDebInfo\capnp.lib;..\kj\RelWithDebInfo\kj.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/RelWithDebInfo/capnp-tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/RelWithDebInfo/capnp-tests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 -BC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 --check-stamp-file C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 -BC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 --check-stamp-file C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 -BC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 --check-stamp-file C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 -BC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 --check-stamp-file C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 -BC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 --check-stamp-file C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 -BC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 --check-stamp-file C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 -BC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 --check-stamp-file C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 -BC:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1 --check-stamp-file C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\CMakeFiles\0c9aa8da1f7ecb4c517adc612a9a7129\test.capnp.c++.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling Cap'n Proto schema test.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Cap'n Proto schema test.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Debug\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Debug/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+Debug\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Debug/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling Cap'n Proto schema test.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Cap'n Proto schema test.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Release\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Release/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+Release\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Release/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Compiling Cap'n Proto schema test.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Compiling Cap'n Proto schema test.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+MinSizeRel\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/MinSizeRel/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+MinSizeRel\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/MinSizeRel/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Compiling Cap'n Proto schema test.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Compiling Cap'n Proto schema test.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+RelWithDebInfo\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/RelWithDebInfo/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+RelWithDebInfo\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/RelWithDebInfo/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\CMakeFiles\0c9aa8da1f7ecb4c517adc612a9a7129\test-import.capnp.c++.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling Cap'n Proto schema test-import.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Cap'n Proto schema test-import.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Debug\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Debug/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+Debug\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Debug/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling Cap'n Proto schema test-import.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Cap'n Proto schema test-import.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Release\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Release/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+Release\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Release/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Compiling Cap'n Proto schema test-import.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Compiling Cap'n Proto schema test-import.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+MinSizeRel\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/MinSizeRel/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+MinSizeRel\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/MinSizeRel/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Compiling Cap'n Proto schema test-import.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Compiling Cap'n Proto schema test-import.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+RelWithDebInfo\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/RelWithDebInfo/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+RelWithDebInfo\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/RelWithDebInfo/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\CMakeFiles\0c9aa8da1f7ecb4c517adc612a9a7129\test-import2.capnp.c++.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling Cap'n Proto schema test-import2.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling Cap'n Proto schema test-import2.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Debug\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Debug/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import2.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+Debug\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Debug/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import2.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import2.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import2.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import2.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import2.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Debug\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling Cap'n Proto schema test-import2.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling Cap'n Proto schema test-import2.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Release\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Release/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import2.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+Release\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/Release/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import2.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import2.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import2.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import2.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import2.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\Release\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Compiling Cap'n Proto schema test-import2.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Compiling Cap'n Proto schema test-import2.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+MinSizeRel\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/MinSizeRel/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import2.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+MinSizeRel\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/MinSizeRel/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import2.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import2.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import2.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import2.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import2.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\MinSizeRel\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Compiling Cap'n Proto schema test-import2.capnp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Compiling Cap'n Proto schema test-import2.capnp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+RelWithDebInfo\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/RelWithDebInfo/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import2.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+RelWithDebInfo\capnp.exe compile -o C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/RelWithDebInfo/capnpc-c++.exe:C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test_capnp/capnp --src-prefix C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp -I C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/.. C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/src/capnp/test-import2.capnp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import2.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import2.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/chhenning/Numenta/nupic_visual_studio/tools/capnproto/capnproto-c++-0.6.1/CMakeFiles/0c9aa8da1f7ecb4c517adc612a9a7129/test-import2.capnp.c++.rule;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-import2.capnp;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnp.exe;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\RelWithDebInfo\capnpc-c++.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.c++;C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\common-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\blob-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\endian-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\endian-fallback-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\layout-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\any-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\message-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\encoding-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\orphan-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\serialize-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\serialize-packed-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\canonicalize-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\fuzz-test.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test-util.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.c++" />
+    <ClCompile Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.c++" />
+    <ClInclude Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test.capnp.h" />
+    <ClInclude Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import.capnp.h" />
+    <ClInclude Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\test_capnp\capnp\test-import2.capnp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\ZERO_CHECK.vcxproj">
+      <Project>{99144B64-6819-3B1B-A754-838DA0918CE2}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\capnp.vcxproj">
+      <Project>{ECFDCBE9-FD75-3D99-B9C6-010F8B9BD120}</Project>
+      <Name>capnp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\capnp-json.vcxproj">
+      <Project>{92962CE1-67EE-3E2B-97AC-693AD6EFCD00}</Project>
+      <Name>capnp-json</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\capnp-rpc.vcxproj">
+      <Project>{E514C081-97BE-3A6A-9FD4-2BF238E01D11}</Project>
+      <Name>capnp-rpc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\capnp_tool.vcxproj">
+      <Project>{4F4666F9-EA3E-3FED-8277-5DC932871F12}</Project>
+      <Name>capnp_tool</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\capnpc.vcxproj">
+      <Project>{563FE01A-898B-3B28-BB4B-D1D6BCABBDAB}</Project>
+      <Name>capnpc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\capnp\capnpc_cpp.vcxproj">
+      <Project>{A7509414-3802-32D1-8431-B87875067B5C}</Project>
+      <Name>capnpc_cpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\kj.vcxproj">
+      <Project>{24AA1EAB-F4C0-3FC5-A782-251A64237758}</Project>
+      <Name>kj</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\kj-async.vcxproj">
+      <Project>{7087A6A2-91C6-3E0A-8FF9-C0242D02F5BC}</Project>
+      <Name>kj-async</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\chhenning\Numenta\nupic_visual_studio\tools\capnproto\capnproto-c++-0.6.1\src\kj\kj-test.vcxproj">
+      <Project>{82A2B0D0-60EE-34A7-9908-E234879C56A0}</Project>
+      <Name>kj-test</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
